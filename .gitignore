@@ -1,0 +1,25 @@
+# Dependencies (catches both frontend & backend)
+node_modules/
+**/node_modules/
+venv/
+**/venv/
+__pycache__/
+
+# Environment & Secret files (CRITICAL)
+.env
+**/.env
+.env.*
+!.env.example
+
+# Build & Cache outputs
+dist/
+**/dist/
+build/
+**/build/
+.next/
+**/.next/
+
+# Local AI & Editor settings
+.claude/settings.local.json
+.vscode/
+.DS_Store

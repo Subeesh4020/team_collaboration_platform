@@ -1,0 +1,18 @@
+.fullPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 100dvh;
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.errorTitle {
+  font-size: var(--font-size-xl);
+}
+
+.errorMessage {
+  color: var(--color-text-muted);
+}

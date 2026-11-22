@@ -1,0 +1,21 @@
+.result {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.text {
+  min-width: 0;
+}
+
+.body {
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+}

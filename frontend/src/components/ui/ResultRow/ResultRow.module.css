@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.icon {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}
+
+.text {
+  min-width: 0;
+}
+
+.title {
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+}

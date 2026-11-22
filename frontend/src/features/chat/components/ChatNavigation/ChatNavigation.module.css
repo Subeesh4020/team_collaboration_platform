@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  height: 100%;
+  padding: var(--space-4) var(--space-2);
+  overflow-y: auto;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-8) var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: var(--size-modal);
+}
+
+.icon {
+  position: absolute;
+  left: var(--space-3);
+  color: var(--color-text-subtle);
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  min-height: var(--size-control-sm);
+  padding: 0 var(--space-3) 0 var(--space-8);
+  border: var(--size-border) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.input:focus-visible {
+  outline-offset: 0;
+  border-color: var(--color-focus-ring);
+  background-color: var(--color-surface);
+}

@@ -1,0 +1,62 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.sm {
+  width: var(--size-avatar-sm);
+  height: var(--size-avatar-sm);
+  font-size: var(--font-size-xs);
+}
+
+.md {
+  width: var(--size-avatar-md);
+  height: var(--size-avatar-md);
+  font-size: var(--font-size-sm);
+}
+
+.lg {
+  width: var(--size-avatar-lg);
+  height: var(--size-avatar-lg);
+  font-size: var(--font-size-md);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.initials {
+  line-height: 1;
+}
+
+.presence {
+  position: absolute;
+  right: calc(var(--space-1) * -0.5);
+  bottom: calc(var(--space-1) * -0.5);
+  width: var(--size-presence-dot);
+  height: var(--size-presence-dot);
+  border: var(--size-focus-ring) solid var(--color-bg);
+  border-radius: var(--radius-full);
+}
+
+.online {
+  background-color: var(--color-success);
+}
+
+.away {
+  background-color: var(--color-warning);
+}
+
+.offline {
+  background-color: var(--color-text-subtle);
+}

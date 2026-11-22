@@ -1,0 +1,62 @@
+/* Global styles: token imports, reset and base typography only. */
+@import './tokens.css';
+@import './reset.css';
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-semibold);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+:focus-visible {
+  outline: var(--size-focus-ring) solid var(--color-focus-ring);
+  outline-offset: var(--size-focus-ring);
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+}

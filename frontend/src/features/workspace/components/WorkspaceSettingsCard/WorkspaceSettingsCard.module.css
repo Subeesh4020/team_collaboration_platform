@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  border: var(--size-border) solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-surface);
+}
+
+.title {
+  font-size: var(--font-size-md);
+}
+
+.text {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}

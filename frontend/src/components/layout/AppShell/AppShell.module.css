@@ -1,0 +1,85 @@
+.shell {
+  display: grid;
+  grid-template-areas:
+    'topbar'
+    'main';
+  grid-template-rows: var(--size-topbar) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  height: 100dvh;
+}
+
+.skipLink {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: var(--z-toast);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  transform: translateY(-200%);
+}
+
+.skipLink:focus {
+  transform: none;
+}
+
+/* Mobile: off-canvas drawer. */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: var(--z-sidebar);
+  width: var(--size-sidebar);
+  transform: translateX(-100%);
+  transition: transform var(--duration-normal) var(--easing-standard);
+  visibility: hidden;
+}
+
+.shell[data-sidebar-open] .sidebar {
+  transform: none;
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-sidebar) - 1);
+  background-color: var(--color-bg-overlay);
+}
+
+.topbar {
+  grid-area: topbar;
+  min-width: 0;
+}
+
+.main {
+  grid-area: main;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+}
+
+.main:focus {
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .shell {
+    grid-template-areas:
+      'sidebar topbar'
+      'sidebar main';
+    grid-template-columns: var(--size-sidebar) minmax(0, 1fr);
+  }
+
+  .sidebar {
+    position: static;
+    grid-area: sidebar;
+    width: auto;
+    transform: none;
+    visibility: visible;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
